@@ -2,6 +2,7 @@
   "name": "Pills Theme",
   "author": "reifenrath-dev",
   "dark": true,
+  "parentTheme": "Islands Dark",
   "colors": {
     "primary": "#31e268",
     "secondary": "#e26f31",
@@ -14,6 +15,11 @@
     "borderColor": "#1c1c1c"
   },
   "icons": {
+    "/toolwindows/toolWindowProject.svg": "/icons/project.svg",
+    "/toolwindows/toolWindowCommit.svg": "/icons/commit.svg",
+    "/toolwindows/toolWindowProblems.svg": "/icons/problems.svg",
+    "/toolwindows/toolWindowProblemsEmpty.svg": "/icons/problems.svg",
+    "/toolwindows/toolWindowChanges.svg": "/icons/vcs.svg",
     "ColorPalette": {
       "Gray.Fill": "black",
       "Gray.Stroke": "white",
@@ -60,7 +66,7 @@
   },
   "ui": {
     "*": {
-      "arc": "8",
+      "arc": "16",
       "background": "black",
       "foreground": "white",
       "caretForeground": "white",
@@ -73,6 +79,9 @@
       "separatorColor": "borderColor",
       "focusedBorderColor": "activeSelection"
     },
+    "StatusBar.borderColor": "#XXXXXX00",
+    "ToolWindow.Stripe.borderColor": "#XXXXXX00",
+    "MainToolbar.borderColor": "#XXXXXX00",
     "ActionButton": {
       "hoverBorderColor": "activeSelection",
       "hoverBackground": "black",
@@ -114,6 +123,8 @@
       "shortcutForeground": "activeSelection"
     },
     "EditorTabs": {
+      "underlinedBorderColor": "primary",
+      "inactiveUnderlinedTabBorderColor": "primary",
       "underlinedTabBackground": "black",
       "underlineHeight": 2
     },
